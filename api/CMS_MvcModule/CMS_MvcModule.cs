@@ -25,7 +25,7 @@ namespace api.CMS_MvcModule
 
             //AuthenticationConfig.ConfigureGlobal(GlobalConfiguration.Configuration);
             GlobalConfiguration.Configuration.Routes.MapHttpRoute("api", "api/{controller}/{id}", new { id = RouteParameter.Optional });
-
+            GlobalConfiguration.Configuration.Formatters.Insert(0, new JsonpMediaTypeFormatter());
             //WebApiConfig.Register(GlobalConfiguration.Configuration);
             //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             //RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -23,3 +23,4 @@ C:\bjm\wwwroot\Kentico9\api\bin\Debug\Newtonsoft.Json.xml
 C:\bjm\wwwroot\Kentico9\api\bin\Debug\System.Net.Http.Formatting.xml
 C:\bjm\wwwroot\Kentico9\api\bin\Debug\System.Web.Http.xml
 C:\bjm\wwwroot\Kentico9\api\bin\Debug\System.Web.Http.WebHost.xml
+C:\bjm\wwwroot\Kentico9\api\obj\Debug\api.csprojResolveAssemblyReference.cache
