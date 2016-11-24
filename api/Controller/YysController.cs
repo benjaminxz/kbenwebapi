@@ -7,14 +7,18 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
+using CMS.CustomTables;
 
 namespace api.Controller
 {
     public class YysController : ApiController
     {
         public string Get()
-        {           
-            return "aqweqw";
+        {
+            
+            string name= CustomTableItemProvider.GetItems("bjm.apiCrud").FirstOrDefault().GetStringValue("apiName", "");
+            return name;
+
         }
 
     }
