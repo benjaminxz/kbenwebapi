@@ -23,7 +23,7 @@ namespace api.Controller
 
         public List<string> Get(int a)
         {
-            List<string> stringList = new List<string>() ;//这里必须这样声明
+            List<string> stringList = new List<string>();//这里必须这样声明
             var TableItems = CustomTableItemProvider.GetItems("bjm.apiCrud");
             foreach (var item in TableItems)
             {
@@ -35,5 +35,24 @@ namespace api.Controller
             return stringList;
         }
 
+        [HttpPost]
+        public string SaveData(dynamic obj)
+        {
+            string strName = Convert.ToString(obj.NAME);
+            if (!string.IsNullOrEmpty(strName))
+            {
+                CustomTableItem apiCrudItem = CustomTableItemProvider.GetItems("bjm.apiCrud");
+                apiCrudItem.SetValue("apiCrudItem", strName);
+                apiCrudItem.Update();
+                return "save " + strName + " success";
+            }
+            else
+            {
+                return "not success";
+            }
+
+        }
     }
+
+
 }
