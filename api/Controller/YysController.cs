@@ -41,14 +41,14 @@ namespace api.Controller
             string strName = Convert.ToString(obj.NAME);
             if (!string.IsNullOrEmpty(strName))
             {
-                CustomTableItem apiCrudItem = CustomTableItemProvider.GetItems("bjm.apiCrud");
-                apiCrudItem.SetValue("apiCrudItem", strName);
-                apiCrudItem.Update();
+                var newApiCrudItem = new CustomTableItem("bjm.apiCrud");
+                newApiCrudItem.SetValue("apiName", strName);
+                newApiCrudItem.Insert();
                 return "save " + strName + " success";
             }
             else
             {
-                return "not success";
+                return "not success:you insert a null value.";
             }
 
         }
