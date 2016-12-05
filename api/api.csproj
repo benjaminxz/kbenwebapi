@@ -76,12 +76,14 @@
     <Compile Include="Class1.cs" />
     <Compile Include="CMS_MvcModule\CMS_MvcModule.cs" />
     <Compile Include="CMS_MvcModule\CMS_MvcModuleMetadata.cs" />
+    <Compile Include="ProductContent\Controllers\ProductContentController.cs" />
     <Compile Include="Controller\ValuesController.cs" />
     <Compile Include="Controller\YysController.cs" />
     <Compile Include="JsonpMediaTypeFormatter.cs" />
     <Compile Include="Object\Controllers\ObjectController.cs" />
     <Compile Include="Object\Controllers\PictureController.cs" />
     <Compile Include="Object\DTO\apiCrud.cs" />
+    <Compile Include="ProductContent\DTO\apiProductContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

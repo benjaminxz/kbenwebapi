@@ -60,3 +60,4 @@ C:\bjm\wwwroot\Kentico9\api\bin\Debug\CMS.Protection.xml
 C:\bjm\wwwroot\Kentico9\api\bin\Debug\CMS.Modules.xml
 C:\bjm\wwwroot\Kentico9\api\bin\Debug\CMS.WebFarmSync.xml
 C:\bjm\wwwroot\Kentico9\api\bin\Debug\CMS.LicenseProvider.XmlSerializers.dll
+C:\bjm\wwwroot\Kentico9\api\obj\Debug\api.csprojResolveAssemblyReference.cache
