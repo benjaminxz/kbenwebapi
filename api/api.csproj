@@ -73,6 +73,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessSearch\Controllers\BusinessSearchController.cs" />
+    <Compile Include="BusinessSearch\DTO\apiBusiness.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="CMS_MvcModule\CMS_MvcModule.cs" />
     <Compile Include="CMS_MvcModule\CMS_MvcModuleMetadata.cs" />
